@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Eaten!</title>
+    <link rel="icon" type="image/x-icon" href="../../imgs/babo.com.jpg">
+    <style>
+        img{
+            border-radius: 15px;
+        }
+        .appleimg{
+            height: 300px;
+            width: 300px;
+        }
+        html{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: gray;
+        }
+        .finished{
+            display: none;
+        }
+        .finished.active{
+            display: block;
+        }
+        .appleimg.active{
+            display: none;
+        }
+        button{
+            height: 35px;
+            border-radius: 15px;
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <a href="../redirect.html"><img src="../../imgs/back-button.jpg" width="40" alt="back"></a>
+    <h2>Click to Eat!</h2>
+    <img src="Images/1.png" alt="Apple" onclick="countplus()" id="appleimg" class="appleimg">
+    <div id="finished" class="finished">
+        <br>
+    <h2>Finished!</h2>
+    <button onclick="reset()">Get Another Apple.</button>
+    <h4 id="score"></h4>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

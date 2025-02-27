@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing</title>
+    <link rel="icon" type="image/x-icon" href="../../imgs/babo.com.jpg">
+    <style>
+        html {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+            text-align: center;
+        }
+        input {
+            border-radius: 10px;
+            height: 30px;
+            background: lightblue;
+            text-align: center;
+        }
+        img {
+            border-radius: 15px;
+        }
+        button {
+            padding: 5px;
+            border-radius: 10px;
+            background: lightblue;
+            height: 30px;
+            margin: 10px auto;
+            display: block;
+        }
+        .settings {
+            display: none;
+            background: white;
+            border-radius: 15px;
+            margin: 15px;
+            padding: 20px;
+        }
+        .settings.active {
+            display: block;
+        }
+        .guessarea.active {
+            display: none;
+        }
+        .reset {
+            display: none;
+        }
+        .reset.active {
+            display: block;
+            margin: 10px auto;
+        }
+        .check.active{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <a href="../../../fun/index.html"><img src="../../imgs/back-button.jpg" width="40"></a>
+    </div>
+    <div id="guessarea" class="guessarea">
+        <h2>Guess The Number!</h2><br>
+        <h3 id="hint">1 - 100</h3><br>
+        <form>
+        <input type="number" id="guess" required><br><br>
+        <button id="enter" type="submit" onclick="check()" class="check">Check!</button>
+        </form>
+        <h2 id="output"></h2>
+        <button id="reset" class="reset" onclick="resetf()">Reset</button>
+    </div>
+    <div id="settings" class="settings">
+        <h3>Settings</h3>
+        <form onsubmit="update(event)">
+            <label for="minNum">Minimum Number:</label>
+            <input type="number" id="minNum" required><br><br>
+            <label for="maxNum">Maximum Number:</label>
+            <input type="number" id="maxNum" required><br><br>
+            <button type="submit">Set!</button><br>
+        </form>
+    </div>
+    <br>
+    <button onclick="settings()">Settings</button>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="BABO">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BABO.com About</title>
+ <link rel="stylesheet" href="../sources/data/style.css">
+    <link rel="icon" type="image/x-icon" href="../Sources/imgs/BABO.com.jpg">
+    <style>
+      .logos img {
+border-radius: 15px;
+width: 123px;
+height: 123px;
+}
+.logos{
+     display: flex;
+     flex-wrap: wrap;
+     align-item: flex-start;
+     column-gap: 4px;
+}
+.logos a{
+     color: #1c15ff;
+}
+#news{
+     background: tomato;
+     border-radius: 20px;
+     padding: 2px;
+     color: black;
+     height: 50px;
+     font-size: 20px;
+}
+#rd{
+     border-radius: 20px;
+     background: blue; 
+     color: white;
+     padding: 5px;
+}
+.names{
+  border-radius: 15px;
+  color: inherit;
+  text-decoration: none;
+}
+      </style>
+</head>
+    <body>
+  <a href="../home/index.html"><img class="back" src="../sources/imgs/back-button.jpg"></a>
+    <h2>This is the v<span id="v">X</span> of my Website!</h2>
+        <h4 id="rd">This version was Made on <br><span id="date">-----</span>.</h4>
+    <h3>These are the Sources I took help from to make this Website!</h3>
+    <div id="names">
+    </div>
+    <div class="logos" id="logos">
+    </div>
+<br>
+<div><a href="changelog.html"><button id="news">Change Log.</button></a></div>
+<script src="siteHistory.js" type="module"></script>
+ </body>
+</html>

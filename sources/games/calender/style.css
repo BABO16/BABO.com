@@ -1,0 +1,21 @@
+html{
+    text-align: center;
+    background-image: url(background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.main{
+    background: yellow;
+    border-radius: 15px;
+    color: gray;
+    padding: 5px;
+    font-family: monospace, Sans-serif;
+}
+.back{
+    background: white;
+    border-radius: 15px;
+    width: 50px;
+}

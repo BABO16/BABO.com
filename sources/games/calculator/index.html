@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../imgs/babo.com.jpg">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="back"><a href="../../../fun/index.html"><img src="../../imgs/back-button.jpg" width="40"></a></div><br><br><br>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="atd('+')" class="yellow">+</button>
+            <button onclick="atd('7')">7</button>
+            <button onclick="atd('8')">8</button>
+            <button onclick="atd('9')">9</button>
+            <button onclick="atd('-')" class="yellow">-</button>
+            <button onclick="atd('4')">4</button>
+            <button onclick="atd('5')">5</button>
+            <button onclick="atd('6')">6</button>
+            <button onclick="atd('*')" class="yellow">x</button>
+            <button onclick="atd('1')">1</button>
+            <button onclick="atd('2')">2</button>
+            <button onclick="atd('3')">3</button>
+            <button onclick="atd('/')" class="yellow">÷</button>
+            <button onclick="atd('.')" class="green">.</button>
+            <button onclick="atd('0')">0</button>
+            <button onclick="equal()" class="equal">=</button>
+            <button onclick="clearDisplay()" class="clear">C</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

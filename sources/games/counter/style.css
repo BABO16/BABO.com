@@ -1,0 +1,54 @@
+html{
+     text-align: center;
+     background: pink;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+body{
+     background: white;
+     border-radius: 30px;
+     height: 520px;
+     width: 350px;
+}
+#countlabel{
+     font-size: 500%;
+     position: relative;
+     top: 80px;
+}
+#btns{
+     font-size: 200%;
+}
+button{
+     background: lightblue;
+     border-radius: 15px;
+     height: 50px;
+     width: 300px;
+}
+button:hover{
+     background: blue;
+     color: white;
+}
+
+img {
+    border-radius: 15px;
+    float: left;
+    position: relative;
+    left: 20px;
+}
+     
+.back h1{
+     font-size: 30px;
+     color: black;
+     font-family: san-sarif;
+     float: right;
+     position: relative;
+     bottom: 10px;
+     right: 80px;
+}
+
+.back {
+     float: left;
+     width: 270px;
+     height: 80px;
+}

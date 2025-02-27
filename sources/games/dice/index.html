@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Dices</title>
+    <link rel="icon" type="image/x-icon" href="../../imgs/babo.com.jpg">
+     <style>
+         html{
+             background: lightblue;
+             text-align: center;
+         }
+         input{
+             height: 30px;
+             border-radius: 15px;
+             text-align: center;
+             border: 0px;
+         }
+         button{
+             height: 35px;
+             border-radius: 15px;
+             padding: 5px;
+             margin: 15px;
+             border: 0px;
+             font-size: 1.5em;
+         }
+         .back{
+             background: white;
+             border-radius: 15px;
+             width: 125px;
+             padding: 15px;
+         }
+         #images img{
+             width: 80px;
+             padding: 2px;
+             border-radius: 12px;
+         }
+     </style>
+</head>
+<body>
+     <a href="../../../fun/index.html"><div class="back"><img src="../../imgs/back-button.jpg" width="40"></div></a>
+    
+    <div id="container">
+        <h1>Roll Dices</h1>
+        <form>
+        <input id="numOfDices" min="1" type="number" placeholder="Number of Dices To Roll" required><br>
+        <button onclick="roll()" type="submit">Roll!</button>
+        </form>
+        <div id="output"></div>
+        <div id="images"></div>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>

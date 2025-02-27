@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BABO.com Profile</title>
+  <link rel="stylesheet" href="../Sources/data/style.css">
+  <link rel="icon" type="image/x-icon" href="../sources/imgs/babo.com.jpg">
+<style>
+  .profile {
+    display: none;
+  }
+  .profile img{
+    border-radius: 15px;
+    width: 160px;
+    height: 160px;
+  }
+  .profile.active{
+    display: block;
+  }
+  .login.active{
+    display: none;
+  }
+  .devinfo{
+      display: none;
+  }
+  .devinfo.active{
+      display: block;
+  }
+</style>
+</head>
+<body>
+ <a href="../home/index.html"><img class="back" src="../sources/imgs/back-button.jpg"/></a><br><br>
+<div class="profile" id="profile">
+  <img id="profilePic" src="../Sources/ProfilePics/None.png" alt="ProfilePic"><br>
+  <h2 id="name">Null</h2>
+  <h6 id="email">user1@email.com</h6>
+  <h5 id="info">Lorem Ipsum Dollar Sit Amit</h5>
+  <a href="" id="eastergame" onclick="easterclick()"><button id="eastergamebtn">Game</button></a><br><br>
+  <a href=""><button id="logout" onclick="logout()">LOG OUT</button></a><br><br>
+  </div>
+  <div id="devinfo" class="devinfo">
+  <a href="../login/devinfo.html"><button>Accounts Info</button></a><br><br></div>
+<div class="login" id="login">
+  <h3>Not Logged In.</h3>
+  <a href="../login/index.html"><button>LOG IN</button></a>
+</div>
+  <script src="profile.js"></script>
+</body>
+</html>

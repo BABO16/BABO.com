@@ -1,0 +1,71 @@
+#h1 {
+     font-family: "Press Start 2P", Sans-serif;
+     margin-top: 33%;
+     font-size: 22px;
+     font-style: italic;
+     text-align: center;
+}
+html {
+     background: url("tatakaiboxs.jpg");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+     text-align: left;
+     font-family: "Press Start 2P", Sans-serif;
+     height: 500px;
+}
+
+.box1 {
+     border: 1px solid black;
+     width: 70%;
+     height: 70%;
+     background: #fff10086;
+     border-radius: 15px;
+     margin-top: 80px;
+}
+
+.box2{
+     border: 1px solid black;
+     width: 30%;
+     height: 30%;
+     border-radius: 15px;
+     background: #00d5ff84;
+     float: right;
+}
+
+.p1 {
+     font-family: "Press Start 2P", Sans-serif;
+     color: white;
+     font-size: 98%;
+}
+
+.box1:hover {
+     background: yellow;
+}
+
+.box2:hover {
+     background: #55d5ff;
+}
+
+.back img{
+     width: 80px;
+     height: 80px;
+     border-radius: 15px;
+     float: left;
+     }
+     
+.back h1{
+     font-size: 30px;
+     color: black;
+     float: left;
+     font-family: san-sarif;
+}
+
+.back {
+     float: left;
+     width: 270px;
+     height: 80px;
+     position: relative;
+     bottom: 30px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="BABO">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BABO.com Log In</title>
+ <link rel="stylesheet" href="../Sources/data/style.css">
+ <link rel="icon" type="image/x-icon" href="../sources/imgs/babo.com.jpg">
+    <style>
+           body{
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           align-items: center;
+        }
+        #pass{
+      position: relative;
+      width: fit-content;
+        }
+        input{
+      padding-right: 60px; /* Adjust based on the icon size */
+        }
+        #pass img{
+    height: 25px;
+    border-radius: 0;
+      position: absolute;
+      top: 50%;
+      right: 10px; /* Adjust based on preference */
+      transform: translateY(-50%);
+      cursor: pointer;      
+      }
+      .devinfo{
+          display: none;
+      }
+      .devinfo.active{
+          display: block;
+      }
+      </style>
+</head>
+<body class="loginbody">
+<a href="../home/index.html" id="back">
+ <img class="back" src="../sources/imgs/back-button.jpg"/></a><br>
+  <h2>Log In to your Account!</h2><br>
+  <form id="login">
+    <div class="input">
+  <input id="email" type="email" placeholder="Email" required><br>
+  <div id="pass">
+  <input id="password" type="password" placeholder="Password" required><br>
+  <img width="22" src="../Sources/imgs/show-pass.png" id="pass-icon"></div>
+  <input id="pin" type="number" placeholder="Pin" required><br></div><br>
+  <button id="enter" type="submit">Enter</button><br>
+  </form><br><br>
+  <div id="devinfo" class="devinfo">
+      <a href="devinfo.html"><button>Accounts Info</button></a>
+  </div>
+  <p id="profileInfo"></p><br>
+   <script type="module" src="login.js"></script>
+ </body>
+</html>

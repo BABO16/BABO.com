@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BABO.com Sign Up</title>
+    <style>
+      body{
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           align-items: center;
+        }
+        #pass{
+      position: relative;
+      width: fit-content;
+        }
+        input{
+      padding-right: 60px; /* Adjust based on the icon size */
+        }
+        #pass img{
+    height: 25px;
+    width: 25px;
+    border-radius: 0;
+      position: absolute;
+      top: 50%;
+      right: 10px; /* Adjust based on preference */
+      transform: translateY(-50%);
+      cursor: pointer;
+      }
+        </style>
+</head>
+<body style="height: 680px;">
+<link rel="stylesheet" href="../sources/style.css">
+  <a href="../login/index.html"><img class="back" src="../sources/back-button.jpg"></a>
+ <h1>Please Fill up all these Details to create your Account</h1>
+ <div>
+ <input type="text" id="username" placeholder="Username"><br>
+ <input type="text" id="email" placeholder="Email"><br>
+ <div id="pass">
+ <input type="password" id="password" placeholder="Password">
+ <img src="../sources/show-pass.png" id="pass-icon"><br>
+</div>
+<div>
+ <input type="password" id="confirmPass" placeholder="Confirm Password"><br>
+ <input type="number" id="phone" placeholder="Phone Number"><br>
+ <input type="number" id="pin" placeholder="Pin"><br><br>
+ <button id="create">Create</button>
+    <h4>Can't Create Account Yet. Can only Log In. If you want an account, Ask Mustansar.</h4>
+    </div>
+<script src="trail-script.js"></script>
+</body>
+</html>

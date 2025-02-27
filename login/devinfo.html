@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounts Info</title>
+    <link rel="icon" type="image/x-icon" href="../sources/imgs/babo.com.jpg">
+    <style>
+        .titles {
+            font-weight: bold;
+        }
+
+        summary {
+            border: 2px solid black;
+            padding: 5px;
+            border-radius: 3px;
+            text-align: left;
+        }
+
+        details {
+            background: #e8e8e8;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .profilepics{
+            width: 250px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        button{
+            height: 30px;
+            border-radius: 5px;
+            margin: 2px;
+        }
+        .clearAdmin{
+            display: none;
+        }
+        .clearAdmin.active{
+            display: block;
+        }
+        .setAdmin{
+            display: block;
+        }
+        .setAdmin.active{
+            display: none;
+        }
+        .info{
+            display: none;
+        }
+        .info.active{
+            display: block;
+        }
+        .name{
+            font-size: 1.6em;
+        }
+        strong{
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" id="back"><button>Back</button></a>
+    <div>
+    <div id="info" class="info">
+        <h2 id="infoh"></h2>
+        <a href=""><button id="logout">Logout</button></a>
+        <br>
+    </div>
+    <button id="clearAdmin" class="clearAdmin">Clear Admin</button>
+    <button id="setAdmin" class="setAdmin">Set Admin</button></div>
+    <h2>Information of All Accounts on BABO.com</h2>
+    <h3>Total Accounts: <span id="total" class="name">0</span></h3>
+    <div id="accountsContainer"></div>
+    
+
+    <script type="module" src="devinfo.js"></script>
+</body>
+</html>

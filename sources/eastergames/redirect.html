@@ -1,0 +1,8 @@
+<script type="module">
+    document.addEventListener('DOMContentLoaded', ()=>{
+        const loggedIn = localStorage.getItem('backfun');
+        const location = loggedIn ? '../../login/profile.html' : '../../fun/index.html';
+        window.location.href = location;
+        localStorage.removeItem('backfun');
+    });
+</script>

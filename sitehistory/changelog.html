@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BABO.com ChangeLog</title>
+  <link rel="stylesheet" href="../sources/data/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Sources/imgs/BABO.com.jpg">
+  <style>
+    #news{
+      background: yellow;
+      border-radius: 15px;
+      padding: 20px;
+    }
+    </style>
+</head>
+<body>
+  <a href="index.html"><img class="back" src="../sources/imgs/back-button.jpg"></a>
+  <h1>Change Log.</h1>
+    <h3 id="news"></h3>
+    <script type="module">
+        import { changelog } from './../Sources/data/changelog.js/';
+        document.getElementById('news').textContent = changelog;
+    </script>
+</body>
+</html>

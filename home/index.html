@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="BABO">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an HTML file I have made to learn coding!">
+    <title>BABO.com</title>
+ <link rel="stylesheet" href="../sources/data/style.css">
+    <link rel="icon" type="image/x-icon" href="../Sources/imgs/BABO.com.jpg">
+ <style>
+   body{
+     height: 565px;
+   }
+   
+.ver {
+text-align: right;
+}
+.pages{
+    width: 60px;
+    border-radius: 0px;
+    float: left;
+    margin: 20px;
+}
+.pagescont{
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 60px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+#account{
+    background: linear-gradient(to left, #959595, #c9c9c9);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#fun{
+    background: linear-gradient(to left, #c415ff, #c9c9c9);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#accountimg{
+    border-radius: 30px;
+}
+   </style>
+</head>
+    <body>
+ <div>
+ <a href="index.html">
+ <img style="width: 250px;" src="../sources/imgs/babo.com.logo.png"></a>
+    <br>
+    <a href="../login/index.html" id="sendp"><div id="account" class="pagescont"><img class="pages" id="accountimg" src="../sources/imgs/account.svg"><h3 id="accountname">Login</h3></div></a>
+    <a href="../fun/index.html"><div id="fun" class="pagescont"><img class="pages" id="funimg" src="../sources/imgs/fun.svg"><h3>Fun</h3></div></a>
+     </div>
+     <div>
+ <a href="../siteHistory/index.html"><p class="ver" id="ver">BABO.com v<span id="v">X.X</span></p></a><br>
+ </div>
+ <script src="script.js"></script>
+ <script type="module">
+import { version } from './../Sources/data/changelog.js/';
+document.getElementById("v").textContent = version;
+ </script>
+ </body>
+</html>

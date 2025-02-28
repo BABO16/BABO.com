@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const container = document.getElementById('accountsContainer');
 
     users.forEach(user => {
+        const isAdmin = user.isAdmin ? true : false;
+        const game = user.game ? true : false;
+        
         const details = document.createElement('details');
         const summary = document.createElement('summary');
         summary.textContent = user.username;
@@ -43,6 +46,10 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = "";
         });
         details.appendChild(loginButton);
+        
+        const specialInfo = document.createElement('p');
+        specialInfo.innerHTML = `<strong>isAdmin:</strong> ${isAdmin}<br><strong>Game:</strong> ${game}`
+        details.appendChild(specialInfo);
 
         container.appendChild(details);
     });

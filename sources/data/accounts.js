@@ -7,5 +7,5 @@ export const users = [
     {username: 'Shabo', email: 'recong7693@email.com', password: '19873', pin: '48796', info: 'Nothing', id: '385954957'},
     {username: 'CopyNinja', email: 'milker@gmail.com', password: 'trash', pin: '106', info: 'I love 106/108', id: '486376475'},
     {username: 'SONGOKU', email: 'gokugoku@gmail.com', password: 'Goku 1234567', pin: '7151120', info: 'Kakarot Goku', id: '486486376'},
-    {username: 'DeadPool', email: 'deadpoolnuts32@gmail.com', password: 'I like Nuts.', pin: '0000', info: 'Talha Ur Rehman Shahid Uchia Ootsutsuki Akatsuki Infinity!', id: '385386485'}
+    {username: 'VipX_Talha', email: 'talhashahid786174@gmail.com', password: 'talha786', pin: '786174', info: 'Talha Ur Rehman Shahid Uchia Ootsutsuki Akatsuki Infinity!', id: '385386485', isAdmin: true}
 ];

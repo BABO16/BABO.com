@@ -35,3 +35,11 @@ function devInfo2(user) {
 function easterclick() {
     localStorage.setItem('backfun', true)
 };
+
+if(JSON.parse(storedUser).game) {
+    easterActive(JSON.parse(storedUser));
+};
+
+function easterActive(user) {
+    document.getElementById('eastergame').classList.add("active");
+};

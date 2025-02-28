@@ -1,7 +1,9 @@
 const loggedIn = localStorage.getItem('babocomUser1');
-if(loggedIn) {
+
+if(JSON.parse(loggedIn).game) {
     easterActive(JSON.parse(loggedIn));
 };
+
 function easterActive(user) {
     const easterdiv = document.getElementById('easterdiv');
     const easterBtn = document.getElementById('easter');

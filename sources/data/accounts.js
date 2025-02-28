@@ -1,6 +1,6 @@
 export const users = [
     {username: 'BABO', email: 'mustansar37@email.com', password: 'BABO-KING', pin: '21215', info: 'Website Owner. Show Some Respect!', id: '094567428', isAdmin: true},
-    {username: 'Apple', email: 'apple768@gmail.com', password: 'Apple786', pin: '1234', info: 'Do you know', id: '594959508'},
+    {username: 'Apple', email: 'apple768@gmail.com', password: 'Apple786', pin: '1234', info: 'Do you know', id: '594959508', game: true},
     {username: 'SIDHUMOOSEWALA', email: 'mahi.rai275@gmail.com', password: 'DEVIL295', pin: '5911', info: 'OH NI SIDHU MOOSE WALA MOOSE ALA NAAM SOHNI DA', id: '495958586'},
     {username: 'Mano', email: 'manobilli73248@gmail.com', password: '10001810', pin: '2014', info: 'I like Noodles.', id: '485485463'},
     {username: 'Ghurdia', email: 'ghurdia111234@gmail.com', password: '111234', pin: '2013', info: 'Random', id: '485275946'},
